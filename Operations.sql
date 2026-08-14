@@ -171,27 +171,219 @@ group by d.doctor_id, d.doctor_name
 order by count_appoint desc
 limit 1;
 -- 52.	Find the department with the highest number of doctors.
-
+SELECT 
+    dep.department_id,
+    dep.department_name,
+    COUNT(d.doctor_id) AS doctor_count
+FROM doctor d
+JOIN department dep
+    ON d.department_id = dep.department_id
+GROUP BY dep.department_id, dep.department_name
+ORDER BY doctor_count DESC
+LIMIT 1;
 -- 53.	Find the patient who has the highest total billing amount.
+select p.patient_id ,p.patient_name ,sum(b.net_amount) as total_bill
+from patient p join bill b
+on p.patient_id=b.patient_id
+group by p.patient_id,p.patient_name
+order by total_bill desc
+limit 1;
 -- 54.	Find patients who have more than one appointment.
+select p.patient_id , p.patient_name , count(a.appointment_id) as appointments 
+from patient p 
+join appointment a 
+on p.patient_id=a.appointment_id
+group by p.patient_id , p.patient_name
+having appointments>1;
 -- 55.	Find doctors who have never received an appointment.
+select d.doctor_id , d.doctor_name , count(a.appointment_id) as appointments
+from doctor d 
+left join appointment a 
+on d.doctor_id=a.doctor_id
+group by d.doctor_id, d.doctor_name
+having appointments=0;
 -- 56.	Find patients who have never had an appointment.
+select p.patient_id , p.patient_name , count(a.appointment_id)
+from patient p 
+left join appointment a 
+on p.patient_id=a.patient_id
+group by p.patient_id , p.patient_name 
+having count(a.appointment_id)=0;
 -- 57.	Find the second-highest staff salary.
+select max(salary) from staffs 
+where salary < (select max(salary) from staffs);
 -- 58.	Find the highest-paid staff member in each department.
+select s.* from staffs s 
+where s.salary = (select max(s1.salary) 
+from staffs s1 
+where s.department_id=s1.department_id);
 -- 59.	Find the department whose staff has the highest average salary.
+select department_id,avg(salary) max_avg_salary
+from staffs 
+group by department_id
+order by max_avg_salary desc limit 1; 
 -- 60.	Find the percentage of appointments that were cancelled.
+SELECT 
+    COUNT(CASE WHEN status = 'Cancelled' THEN 1 END) * 100.0 / COUNT(*) AS cancelled_percentage
+FROM appointment;
 -- 61.	Find the top 5 doctors by completed appointments.
+SELECT 
+    d.doctor_id,
+    d.doctor_name,
+    COUNT(a.appointment_id) AS completed_appointments
+FROM doctor d
+JOIN appointment a
+    ON d.doctor_id = a.doctor_id
+WHERE a.status = 'Completed'
+GROUP BY d.doctor_id, d.doctor_name
+ORDER BY completed_appointments DESC
+LIMIT 5;
 -- 62.	Find the top 5 patients by total medical billing.
+SELECT 
+    p.patient_id,
+    p.patient_name,
+    SUM(b.amount) AS total_billing
+FROM patient p
+JOIN bill b
+    ON p.patient_id = b.patient_id
+GROUP BY p.patient_id, p.patient_name
+ORDER BY total_billing DESC
+LIMIT 5;
 -- 63.	Calculate monthly hospital revenue from paid bills.
+SELECT 
+    DATE_FORMAT(bill_date, '%Y-%m') AS month,
+    SUM(amount) AS monthly_revenue
+FROM bill
+WHERE payment_status = 'Paid'
+GROUP BY DATE_FORMAT(bill_date, '%Y-%m')
+ORDER BY month;
 -- 64.	Find the most frequently prescribed medicines.
+SELECT 
+    medicine_name,
+    COUNT(*) AS prescription_count
+FROM prescription
+GROUP BY medicine_name
+ORDER BY prescription_count DESC;
 -- 65.	Find the most commonly used room type for admissions.
+SELECT 
+    r.room_type,
+    COUNT(a.admission_id) AS admission_count
+FROM room r
+JOIN admission a
+    ON r.room_id = a.room_id
+GROUP BY r.room_type
+ORDER BY admission_count DESC
+LIMIT 1;
 -- 66.	Calculate the average length of hospital stay using admission and discharge dates.
+SELECT 
+    AVG(DATEDIFF(discharge_date, admission_date)) AS average_stay_days
+FROM admission
+WHERE discharge_date IS NOT NULL;
 -- 67.	Find patients who were admitted but have not yet been discharged.
+SELECT 
+    p.patient_id,
+    p.patient_name,
+    a.admission_date
+FROM patient p
+JOIN admission a
+    ON p.patient_id = a.patient_id
+WHERE a.discharge_date IS NULL;
 -- 68.	Find doctors who have appointments with patients aged above 60.
+SELECT DISTINCT
+    d.doctor_id,
+    d.doctor_name
+FROM doctor d
+JOIN appointment a
+    ON d.doctor_id = a.doctor_id
+JOIN patient p
+    ON a.patient_id = p.patient_id
+WHERE p.age > 60;
 -- 69.	Find the department generating the highest total billing revenue.
+SELECT 
+    dep.department_id,
+    dep.department_name,
+    SUM(b.amount) AS total_revenue
+FROM department dep
+JOIN doctor d
+    ON dep.department_id = d.department_id
+JOIN appointment a
+    ON d.doctor_id = a.doctor_id
+JOIN bill b
+    ON a.patient_id = b.patient_id
+GROUP BY dep.department_id, dep.department_name
+ORDER BY total_revenue DESC
+LIMIT 1;
 -- 70.	Create a report showing:
+SELECT 
+    p.patient_id,
+    p.patient_name,
+    COUNT(DISTINCT a.appointment_id) AS total_appointments,
+    COALESCE(SUM(b.net_amount), 0) AS total_billing
+FROM patient p
+LEFT JOIN appointment a
+    ON p.patient_id = a.patient_id
+LEFT JOIN bill b
+    ON p.patient_id = b.patient_id
+GROUP BY p.patient_id, p.patient_name;
 -- 71.	Rank doctors according to their number of completed appointments using a window function.
+SELECT 
+    d.doctor_id,
+    d.doctor_name,
+    COUNT(a.appointment_id) AS completed_appointments,
+    RANK() OVER (
+        ORDER BY COUNT(a.appointment_id) DESC
+    ) AS doctor_rank
+FROM doctor d
+JOIN appointment a
+    ON d.doctor_id = a.doctor_id
+WHERE a.status = 'Completed'
+GROUP BY d.doctor_id, d.doctor_name;
 -- 72.	Rank staff members according to salary within each department.
+SELECT 
+    s.staff_id,
+    s.staff_name,
+    s.department_id,
+    s.salary,
+    RANK() OVER (
+        PARTITION BY s.department_id
+        ORDER BY s.salary DESC
+    ) AS salary_rank
+FROM staff s;
 -- 73.	Find each patient's total number of appointments and rank patients by appointment count.
--- 74.	Find the running total of hospital revenue by bill/order date if you have a bill date column; otherwise note that your current bill table needs a date column.
+SELECT 
+    p.patient_id,
+    p.patient_name,
+    COUNT(a.appointment_id) AS total_appointments,
+    RANK() OVER (
+        ORDER BY COUNT(a.appointment_id) DESC
+    ) AS patient_rank
+FROM patient p
+LEFT JOIN appointment a
+    ON p.patient_id = a.patient_id
+GROUP BY p.patient_id, p.patient_name;
+-- 74.	Find the running total of hospital revenue by bill/order date if you have a bill date column;
+--  otherwise note that your current bill table needs a date column.
+SELECT 
+    bill_id,
+    net_amount,
+    SUM(net_amount) OVER (
+        ORDER BY bill_id
+    ) AS running_total_revenue
+FROM bill
+WHERE status = 'Paid'
+ORDER BY bill_id;
 -- 75.	Create a summary showing:
+SELECT 
+    COUNT(DISTINCT p.patient_id) AS total_patients,
+    COUNT(DISTINCT d.doctor_id) AS total_doctors,
+    COUNT(a.appointment_id) AS total_appointments,
+    COUNT(CASE WHEN a.status = 'Completed' THEN 1 END) AS completed_appointments,
+    COUNT(CASE WHEN a.status = 'Cancelled' THEN 1 END) AS cancelled_appointments,
+    COALESCE(SUM(b.amount), 0) AS total_billing
+FROM patient p
+LEFT JOIN appointment a
+    ON p.patient_id = a.patient_id
+LEFT JOIN doctor d
+    ON a.doctor_id = d.doctor_id
+LEFT JOIN bill b
+    ON p.patient_id = b.patient_id;
