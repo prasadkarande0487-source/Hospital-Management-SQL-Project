@@ -1,4 +1,9 @@
+create database HOspital_Management_System; 
 use Hospital_Management_System;
+
+create table hospital(hospital_id int primary key,
+hospital_name varchar(45),email varchar(45),
+location varchar(20));
 
 CREATE TABLE department( department_id int primary key,
 department_name varchar(45), hospital_id varchar(25),
@@ -11,16 +16,19 @@ foreign key (department_id) references department(department_id));
 
 create table patient(patient_id int primary key , 
 patient_name varchar(45), age int , 
-date_of_birth varchar(45),
+date_of_birth DATE,
 gender varchar(15) , 
 address varchar(45),
-phone_no int );
+phone_no varchar(45) );
 
 create table appointment(appointment_id int primary key , 
 patient_id int , doctor_id int ,
-appointment_date varchar(45) , 
-appointment_time timestamp ,
-status varchar(45));
+appointment_date DATE , 
+appointment_time time ,
+status varchar(45)
+foreign key (patient_id) references patient(patient_id),
+foreign key (doctor_id) references doctor(doctor_id));
+
 
 create table room(room_id int primary key,
 room_type varchar(45) ,
@@ -47,7 +55,10 @@ foreign key (patient_id) references patient(patient_id),
 foreign key (doctor_id) references doctor(doctor_id));
 
 create table prescription ( prescription_id int primary key ,
-medicine_name varchar(45), dosage varchar(45) , frequency int , patient_id int ,
+medicine_name varchar(45),
+ dosage varchar(45) ,
+ frequency int ,
+ patient_id int ,
 foreign key (patient_id) references patient(patient_id));
 
 create table bill (bill_id int primary key ,
@@ -71,13 +82,13 @@ create table bill (bill_id int primary key ,
   age int ,
   gender varchar(45),
   email varchar(35),
-  phone_no int ,
+  phone_no varchar(15) ,
   shift varchar(45),
  designation varchar(45),
+  salary	decimal(10,2),
  foreign key (department_id) references department(department_id));
 
-select * from doctor;
-describe doctor;
+
 
 commit;
  
