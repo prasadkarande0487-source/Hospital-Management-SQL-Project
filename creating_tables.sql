@@ -1,4 +1,4 @@
-create database HOspital_Management_System; 
+create database Hospital_Management_System; 
 use Hospital_Management_System;
 
 create table hospital(hospital_id int primary key,
