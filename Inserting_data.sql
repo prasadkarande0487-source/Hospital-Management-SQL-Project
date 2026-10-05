@@ -85,6 +85,66 @@ VALUES
 (39, 19, 'Dr. Kiran Chavan', 'Ophthalmology', 'kiran.chavan@hospital.com', 'MBBS, MS'),
 (40, 20, 'Dr. Amol Shinde', 'ENT', 'amol.shinde@hospital.com', 'MBBS, MS');
 
+
+
+INSERT INTO patient
+(patient_id, patient_name, age, date_of_birth, gender, address, phone_no)
+VALUES
+(1, 'Aarav Patil', 45, '1981-03-15', 'Male', 'Pune', '9876500001'),
+(2, 'Sneha More', 32, '1994-07-22', 'Female', 'Sangli', '9876500002'),
+(3, 'Rahul Jadhav', 56, '1970-01-10', 'Male', 'Kolhapur', '9876500003'),
+(4, 'Pooja Shinde', 28, '1998-11-05', 'Female', 'Pune', '9876500004'),
+(5, 'Suresh Pawar', 61, '1965-02-18', 'Male', 'Satara', '9876500005'),
+(6, 'Kavita Patil', 39, '1987-06-30', 'Female', 'Sangli', '9876500006'),
+(7, 'Amit Chavan', 48, '1978-09-12', 'Male', 'Karad', '9876500007'),
+(8, 'Neha Kulkarni', 26, '2000-04-25', 'Female', 'Pune', '9876500008'),
+(9, 'Vijay Kadam', 67, '1959-08-14', 'Male', 'Kolhapur', '9876500009'),
+(10, 'Anita Bhosale', 52, '1974-12-03', 'Female', 'Mumbai', '9876500010'),
+
+(11, 'Nilesh More', 41, '1985-05-19', 'Male', 'Sangli', '9876500011'),
+(12, 'Swati Patil', 35, '1991-10-08', 'Female', 'Pune', '9876500012'),
+(13, 'Ganesh Shinde', 59, '1967-03-27', 'Male', 'Satara', '9876500013'),
+(14, 'Priyanka Jadhav', 24, '2002-01-16', 'Female', 'Pune', '9876500014'),
+(15, 'Mahesh Pawar', 50, '1976-07-11', 'Male', 'Karad', '9876500015'),
+(16, 'Rutuja More', 31, '1995-09-29', 'Female', 'Sangli', '9876500016'),
+(17, 'Sachin Patil', 44, '1982-02-06', 'Male', 'Kolhapur', '9876500017'),
+(18, 'Aarti Chavan', 37, '1989-12-21', 'Female', 'Pune', '9876500018'),
+(19, 'Prakash Shinde', 63, '1963-06-17', 'Male', 'Mumbai', '9876500019'),
+(20, 'Madhuri Pawar', 46, '1980-10-31', 'Female', 'Satara', '9876500020'),
+
+(21, 'Akash Jadhav', 29, '1997-04-09', 'Male', 'Pune', '9876500021'),
+(22, 'Meena Deshmukh', 54, '1972-08-23', 'Female', 'Sangli', '9876500022'),
+(23, 'Rohit Patil', 33, '1993-01-28', 'Male', 'Kolhapur', '9876500023'),
+(24, 'Pallavi More', 42, '1984-05-14', 'Female', 'Karad', '9876500024'),
+(25, 'Amol Deshmukh', 58, '1968-11-19', 'Male', 'Pune', '9876500025'),
+(26, 'Shweta Pawar', 30, '1996-06-07', 'Female', 'Satara', '9876500026'),
+(27, 'Dinesh Patil', 49, '1977-09-25', 'Male', 'Sangli', '9876500027'),
+(28, 'Komal Shinde', 23, '2003-03-13', 'Female', 'Pune', '9876500028'),
+(29, 'Vishal Chavan', 36, '1990-07-02', 'Male', 'Mumbai', '9876500029'),
+(30, 'Manisha More', 40, '1986-12-16', 'Female', 'Kolhapur', '9876500030'),
+
+(31, 'Santosh Pawar', 62, '1964-02-25', 'Male', 'Pune', '9876500031'),
+(32, 'Isha Kulkarni', 27, '1999-08-10', 'Female', 'Sangli', '9876500032'),
+(33, 'Nitin Jadhav', 38, '1988-04-18', 'Male', 'Satara', '9876500033'),
+(34, 'Vaishali Patil', 34, '1992-10-27', 'Female', 'Pune', '9876500034'),
+(35, 'Mangesh Shinde', 47, '1979-01-05', 'Male', 'Karad', '9876500035'),
+(36, 'Ashwini Pawar', 31, '1995-06-22', 'Female', 'Sangli', '9876500036'),
+(37, 'Rakesh More', 43, '1983-09-09', 'Male', 'Kolhapur', '9876500037'),
+(38, 'Sonali Jadhav', 25, '2001-12-11', 'Female', 'Pune', '9876500038'),
+(39, 'Ajay Patil', 55, '1971-05-03', 'Male', 'Mumbai', '9876500039'),
+(40, 'Kiran Shinde', 36, '1990-08-20', 'Female', 'Satara', '9876500040'),
+
+(41, 'Deepak Pawar', 60, '1966-03-08', 'Male', 'Pune', '9876500041'),
+(42, 'Radhika More', 29, '1997-11-24', 'Female', 'Sangli', '9876500042'),
+(43, 'Sanjay Chavan', 51, '1975-07-15', 'Male', 'Kolhapur', '9876500043'),
+(44, 'Priya Patil', 22, '2004-02-19', 'Female', 'Pune', '9876500044'),
+(45, 'Harshad Jadhav', 34, '1992-09-06', 'Male', 'Karad', '9876500045'),
+(46, 'Snehal Pawar', 30, '1996-01-30', 'Female', 'Sangli', '9876500046'),
+(47, 'Vivek Shinde', 40, '1986-05-12', 'Male', 'Pune', '9876500047'),
+(48, 'Mrunal Patil', 27, '1999-10-04', 'Female', 'Satara', '9876500048'),
+(49, 'Rajendra More', 65, '1961-06-28', 'Male', 'Mumbai', '9876500049'),
+(50, 'Tejaswini Jadhav', 33, '1993-12-09', 'Female', 'Sangli', '9876500050');
+
 INSERT INTO room
 (room_id, room_type, charge_per_day, status)
 VALUES
@@ -492,80 +552,6 @@ VALUES
 (59, 15, 14200.00, 800.00, 1330.00, 14730.00, 'Paid'),
 (60, 29, 22800.00, 1800.00, 2100.00, 23100.00, 'Pending');
 
-INSERT INTO staffs
-(staff_id, staff_name, department_id, age, gender, email, phone_no, shift, designation, salary)
-VALUES
-(1, 'Ramesh Patil', 1, 42, 'Male', 'ramesh.patil@hospital.com', '9876510001', 'Morning', 'Senior Nurse', 52000.00),
-(2, 'Sunita More', 1, 35, 'Female', 'sunita.more@hospital.com', '9876510002', 'Evening', 'Staff Nurse', 38000.00),
-(3, 'Amit Jadhav', 2, 31, 'Male', 'amit.jadhav@hospital.com', '9876510003', 'Night', 'Nursing Assistant', 28000.00),
-(4, 'Pallavi Shinde', 2, 29, 'Female', 'pallavi.shinde@hospital.com', '9876510004', 'Morning', 'Staff Nurse', 36000.00),
-(5, 'Suresh Pawar', 3, 45, 'Male', 'suresh.pawar@hospital.com', '9876510005', 'Morning', 'Senior Nurse', 55000.00),
-(6, 'Kavita Patil', 3, 33, 'Female', 'kavita.patil@hospital.com', '9876510006', 'Evening', 'Staff Nurse', 39000.00),
-
-(7, 'Rahul Chavan', 4, 28, 'Male', 'rahul.chavan@hospital.com', '9876510007', 'Night', 'Nursing Assistant', 29000.00),
-(8, 'Meena Deshmukh', 4, 38, 'Female', 'meena.deshmukh@hospital.com', '9876510008', 'Morning', 'Staff Nurse', 41000.00),
-(9, 'Vijay Kadam', 5, 40, 'Male', 'vijay.kadam@hospital.com', '9876510009', 'Evening', 'Lab Technician', 43000.00),
-(10, 'Anita Bhosale', 5, 32, 'Female', 'anita.bhosale@hospital.com', '9876510010', 'Morning', 'Lab Technician', 40000.00),
-(11, 'Nilesh More', 6, 36, 'Male', 'nilesh.more@hospital.com', '9876510011', 'Night', 'Pharmacy Assistant', 32000.00),
-(12, 'Swati Patil', 6, 30, 'Female', 'swati.patil@hospital.com', '9876510012', 'Morning', 'Staff Nurse', 37000.00),
-
-(13, 'Ganesh Shinde', 7, 44, 'Male', 'ganesh.shinde@hospital.com', '9876510013', 'Morning', 'Senior Nurse', 57000.00),
-(14, 'Priyanka Jadhav', 7, 27, 'Female', 'priyanka.jadhav@hospital.com', '9876510014', 'Evening', 'Staff Nurse', 35000.00),
-(15, 'Mahesh Pawar', 8, 39, 'Male', 'mahesh.pawar@hospital.com', '9876510015', 'Night', 'Ward Assistant', 30000.00),
-(16, 'Neha Kulkarni', 8, 34, 'Female', 'neha.kulkarni@hospital.com', '9876510016', 'Morning', 'Staff Nurse', 40000.00),
-(17, 'Sachin More', 9, 41, 'Male', 'sachin.more@hospital.com', '9876510017', 'Evening', 'Surgical Assistant', 45000.00),
-(18, 'Aarti Chavan', 9, 30, 'Female', 'aarti.chavan@hospital.com', '9876510018', 'Morning', 'Staff Nurse', 37000.00),
-
-(19, 'Prakash Patil', 10, 47, 'Male', 'prakash.patil@hospital.com', '9876510019', 'Morning', 'Radiology Technician', 48000.00),
-(20, 'Madhuri Pawar', 10, 36, 'Female', 'madhuri.pawar@hospital.com', '9876510020', 'Evening', 'Radiology Technician', 45000.00),
-(21, 'Akash Shinde', 11, 29, 'Male', 'akash.shinde@hospital.com', '9876510021', 'Night', 'Nursing Assistant', 29000.00),
-(22, 'Rutuja Patil', 11, 31, 'Female', 'rutuja.patil@hospital.com', '9876510022', 'Morning', 'Staff Nurse', 38000.00),
-(23, 'Rohit Jadhav', 12, 43, 'Male', 'rohit.jadhav@hospital.com', '9876510023', 'Evening', 'Senior Nurse', 54000.00),
-(24, 'Pooja More', 12, 28, 'Female', 'pooja.more@hospital.com', '9876510024', 'Morning', 'Staff Nurse', 36000.00),
-
-(25, 'Amol Deshmukh', 13, 37, 'Male', 'amol.deshmukh@hospital.com', '9876510025', 'Morning', 'Nursing Assistant', 30000.00),
-(26, 'Shweta Pawar', 13, 33, 'Female', 'shweta.pawar@hospital.com', '9876510026', 'Night', 'Staff Nurse', 39000.00),
-(27, 'Dinesh Patil', 14, 46, 'Male', 'dinesh.patil@hospital.com', '9876510027', 'Evening', 'Senior Nurse', 56000.00),
-(28, 'Komal Shinde', 14, 26, 'Female', 'komal.shinde@hospital.com', '9876510028', 'Morning', 'Staff Nurse', 34000.00),
-(29, 'Vishal Chavan', 15, 35, 'Male', 'vishal.chavan@hospital.com', '9876510029', 'Night', 'Ward Assistant', 31000.00),
-(30, 'Manisha More', 15, 40, 'Female', 'manisha.more@hospital.com', '9876510030', 'Morning', 'Staff Nurse', 42000.00),
-
-(31, 'Santosh Pawar', 16, 48, 'Male', 'santosh.pawar@hospital.com', '9876510031', 'Morning', 'Senior Technician', 58000.00),
-(32, 'Isha Kulkarni', 16, 29, 'Female', 'isha.kulkarni@hospital.com', '9876510032', 'Evening', 'Lab Technician', 41000.00),
-(33, 'Nitin Jadhav', 17, 38, 'Male', 'nitin.jadhav@hospital.com', '9876510033', 'Night', 'Staff Nurse', 40000.00),
-(34, 'Vaishali Patil', 17, 34, 'Female', 'vaishali.patil@hospital.com', '9876510034', 'Morning', 'Staff Nurse', 39000.00),
-(35, 'Mangesh Shinde', 18, 44, 'Male', 'mangesh.shinde@hospital.com', '9876510035', 'Evening', 'Senior Technician', 60000.00),
-(36, 'Ashwini Pawar', 18, 32, 'Female', 'ashwini.pawar@hospital.com', '9876510036', 'Morning', 'Lab Technician', 42000.00),
-
-(37, 'Rakesh More', 19, 41, 'Male', 'rakesh.more@hospital.com', '9876510037', 'Morning', 'Staff Nurse', 43000.00),
-(38, 'Sonali Jadhav', 19, 28, 'Female', 'sonali.jadhav@hospital.com', '9876510038', 'Night', 'Staff Nurse', 36000.00),
-(39, 'Ajay Patil', 20, 39, 'Male', 'ajay.patil@hospital.com', '9876510039', 'Evening', 'Nursing Assistant', 30000.00),
-(40, 'Kiran Shinde', 20, 36, 'Female', 'kiran.shinde@hospital.com', '9876510040', 'Morning', 'Staff Nurse', 40000.00),
-(41, 'Deepak Pawar', 21, 43, 'Male', 'deepak.pawar@hospital.com', '9876510041', 'Night', 'Senior Nurse', 55000.00),
-(42, 'Radhika More', 21, 30, 'Female', 'radhika.more@hospital.com', '9876510042', 'Morning', 'Staff Nurse', 37000.00),
-
-(43, 'Sanjay Chavan', 22, 45, 'Male', 'sanjay.chavan@hospital.com', '9876510043', 'Morning', 'Senior Nurse', 56000.00),
-(44, 'Priya Patil', 22, 27, 'Female', 'priya.patil@hospital.com', '9876510044', 'Evening', 'Staff Nurse', 35000.00),
-(45, 'Harshad Jadhav', 23, 34, 'Male', 'harshad.jadhav@hospital.com', '9876510045', 'Night', 'Nursing Assistant', 29000.00),
-(46, 'Snehal Pawar', 23, 31, 'Female', 'snehal.pawar@hospital.com', '9876510046', 'Morning', 'Staff Nurse', 38000.00),
-(47, 'Vivek Shinde', 24, 40, 'Male', 'vivek.shinde@hospital.com', '9876510047', 'Evening', 'Lab Technician', 44000.00),
-(48, 'Mrunal Patil', 24, 29, 'Female', 'mrunal.patil@hospital.com', '9876510048', 'Morning', 'Lab Technician', 40000.00),
-
-(49, 'Rajendra More', 25, 49, 'Male', 'rajendra.more@hospital.com', '9876510049', 'Morning', 'Senior Nurse', 59000.00),
-(50, 'Tejaswini Jadhav', 25, 33, 'Female', 'tejaswini.jadhav@hospital.com', '9876510050', 'Night', 'Staff Nurse', 39000.00),
-(51, 'Omkar Pawar', 26, 30, 'Male', 'omkar.pawar@hospital.com', '9876510051', 'Evening', 'Ward Assistant', 30000.00),
-(52, 'Shilpa Shinde', 26, 37, 'Female', 'shilpa.shinde@hospital.com', '9876510052', 'Morning', 'Staff Nurse', 41000.00),
-(53, 'Nagesh Patil', 27, 42, 'Male', 'nagesh.patil@hospital.com', '9876510053', 'Night', 'Senior Technician', 57000.00),
-(54, 'Pallavi More', 28, 35, 'Female', 'pallavi.more@hospital.com', '9876510054', 'Morning', 'Staff Nurse', 40000.00),
-
-(55, 'Swapnil Chavan', 27, 32, 'Male', 'swapnil.chavan@hospital.com', '9876510055', 'Evening', 'Nursing Assistant', 30000.00),
-(56, 'Jyoti Pawar', 28, 39, 'Female', 'jyoti.pawar@hospital.com', '9876510056', 'Morning', 'Staff Nurse', 43000.00),
-(57, 'Shubham Patil', 29, 27, 'Male', 'shubham.patil@hospital.com', '9876510057', 'Night', 'Ward Assistant', 29000.00),
-(58, 'Asha Jadhav', 30, 44, 'Female', 'asha.jadhav@hospital.com', '9876510058', 'Morning', 'Senior Nurse', 55000.00),
-(59, 'Mohan Shinde', 30, 41, 'Male', 'mohan.shinde@hospital.com', '9876510059', 'Evening', 'Staff Nurse', 42000.00),
-(60, 'Nikita More', 29, 28, 'Female', 'nikita.more@hospital.com', '9876510060', 'Morning', 'Staff Nurse', 36000.00);
-
-
 
 INSERT INTO appointment
 (appointment_id, patient_id, doctor_id, appointment_date, appointment_time, status)
@@ -657,3 +643,75 @@ VALUES
 (78, 6, 4, '2026-08-09', '11:30:00', 'Scheduled'),
 (79, 8, 13, '2026-08-10', '09:00:00', 'Completed'),
 (80, 10, 18, '2026-08-10', '09:30:00', 'Completed');
+
+INSERT INTO staffs
+(staff_id, staff_name, department_id, age, gender, email, phone_no, shift, designation, salary)
+VALUES
+(1, 'Ramesh Patil', 1, 42, 'Male', 'ramesh.patil@hospital.com', '9876510001', 'Morning', 'Senior Nurse', 52000.00),
+(2, 'Sunita More', 1, 35, 'Female', 'sunita.more@hospital.com', '9876510002', 'Evening', 'Staff Nurse', 38000.00),
+(3, 'Amit Jadhav', 2, 31, 'Male', 'amit.jadhav@hospital.com', '9876510003', 'Night', 'Nursing Assistant', 28000.00),
+(4, 'Pallavi Shinde', 2, 29, 'Female', 'pallavi.shinde@hospital.com', '9876510004', 'Morning', 'Staff Nurse', 36000.00),
+(5, 'Suresh Pawar', 3, 45, 'Male', 'suresh.pawar@hospital.com', '9876510005', 'Morning', 'Senior Nurse', 55000.00),
+(6, 'Kavita Patil', 3, 33, 'Female', 'kavita.patil@hospital.com', '9876510006', 'Evening', 'Staff Nurse', 39000.00),
+
+(7, 'Rahul Chavan', 4, 28, 'Male', 'rahul.chavan@hospital.com', '9876510007', 'Night', 'Nursing Assistant', 29000.00),
+(8, 'Meena Deshmukh', 4, 38, 'Female', 'meena.deshmukh@hospital.com', '9876510008', 'Morning', 'Staff Nurse', 41000.00),
+(9, 'Vijay Kadam', 5, 40, 'Male', 'vijay.kadam@hospital.com', '9876510009', 'Evening', 'Lab Technician', 43000.00),
+(10, 'Anita Bhosale', 5, 32, 'Female', 'anita.bhosale@hospital.com', '9876510010', 'Morning', 'Lab Technician', 40000.00),
+(11, 'Nilesh More', 6, 36, 'Male', 'nilesh.more@hospital.com', '9876510011', 'Night', 'Pharmacy Assistant', 32000.00),
+(12, 'Swati Patil', 6, 30, 'Female', 'swati.patil@hospital.com', '9876510012', 'Morning', 'Staff Nurse', 37000.00),
+
+(13, 'Ganesh Shinde', 7, 44, 'Male', 'ganesh.shinde@hospital.com', '9876510013', 'Morning', 'Senior Nurse', 57000.00),
+(14, 'Priyanka Jadhav', 7, 27, 'Female', 'priyanka.jadhav@hospital.com', '9876510014', 'Evening', 'Staff Nurse', 35000.00),
+(15, 'Mahesh Pawar', 8, 39, 'Male', 'mahesh.pawar@hospital.com', '9876510015', 'Night', 'Ward Assistant', 30000.00),
+(16, 'Neha Kulkarni', 8, 34, 'Female', 'neha.kulkarni@hospital.com', '9876510016', 'Morning', 'Staff Nurse', 40000.00),
+(17, 'Sachin More', 9, 41, 'Male', 'sachin.more@hospital.com', '9876510017', 'Evening', 'Surgical Assistant', 45000.00),
+(18, 'Aarti Chavan', 9, 30, 'Female', 'aarti.chavan@hospital.com', '9876510018', 'Morning', 'Staff Nurse', 37000.00),
+
+(19, 'Prakash Patil', 10, 47, 'Male', 'prakash.patil@hospital.com', '9876510019', 'Morning', 'Radiology Technician', 48000.00),
+(20, 'Madhuri Pawar', 10, 36, 'Female', 'madhuri.pawar@hospital.com', '9876510020', 'Evening', 'Radiology Technician', 45000.00),
+(21, 'Akash Shinde', 11, 29, 'Male', 'akash.shinde@hospital.com', '9876510021', 'Night', 'Nursing Assistant', 29000.00),
+(22, 'Rutuja Patil', 11, 31, 'Female', 'rutuja.patil@hospital.com', '9876510022', 'Morning', 'Staff Nurse', 38000.00),
+(23, 'Rohit Jadhav', 12, 43, 'Male', 'rohit.jadhav@hospital.com', '9876510023', 'Evening', 'Senior Nurse', 54000.00),
+(24, 'Pooja More', 12, 28, 'Female', 'pooja.more@hospital.com', '9876510024', 'Morning', 'Staff Nurse', 36000.00),
+
+(25, 'Amol Deshmukh', 13, 37, 'Male', 'amol.deshmukh@hospital.com', '9876510025', 'Morning', 'Nursing Assistant', 30000.00),
+(26, 'Shweta Pawar', 13, 33, 'Female', 'shweta.pawar@hospital.com', '9876510026', 'Night', 'Staff Nurse', 39000.00),
+(27, 'Dinesh Patil', 14, 46, 'Male', 'dinesh.patil@hospital.com', '9876510027', 'Evening', 'Senior Nurse', 56000.00),
+(28, 'Komal Shinde', 14, 26, 'Female', 'komal.shinde@hospital.com', '9876510028', 'Morning', 'Staff Nurse', 34000.00),
+(29, 'Vishal Chavan', 15, 35, 'Male', 'vishal.chavan@hospital.com', '9876510029', 'Night', 'Ward Assistant', 31000.00),
+(30, 'Manisha More', 15, 40, 'Female', 'manisha.more@hospital.com', '9876510030', 'Morning', 'Staff Nurse', 42000.00),
+
+(31, 'Santosh Pawar', 16, 48, 'Male', 'santosh.pawar@hospital.com', '9876510031', 'Morning', 'Senior Technician', 58000.00),
+(32, 'Isha Kulkarni', 16, 29, 'Female', 'isha.kulkarni@hospital.com', '9876510032', 'Evening', 'Lab Technician', 41000.00),
+(33, 'Nitin Jadhav', 17, 38, 'Male', 'nitin.jadhav@hospital.com', '9876510033', 'Night', 'Staff Nurse', 40000.00),
+(34, 'Vaishali Patil', 17, 34, 'Female', 'vaishali.patil@hospital.com', '9876510034', 'Morning', 'Staff Nurse', 39000.00),
+(35, 'Mangesh Shinde', 18, 44, 'Male', 'mangesh.shinde@hospital.com', '9876510035', 'Evening', 'Senior Technician', 60000.00),
+(36, 'Ashwini Pawar', 18, 32, 'Female', 'ashwini.pawar@hospital.com', '9876510036', 'Morning', 'Lab Technician', 42000.00),
+
+(37, 'Rakesh More', 19, 41, 'Male', 'rakesh.more@hospital.com', '9876510037', 'Morning', 'Staff Nurse', 43000.00),
+(38, 'Sonali Jadhav', 19, 28, 'Female', 'sonali.jadhav@hospital.com', '9876510038', 'Night', 'Staff Nurse', 36000.00),
+(39, 'Ajay Patil', 20, 39, 'Male', 'ajay.patil@hospital.com', '9876510039', 'Evening', 'Nursing Assistant', 30000.00),
+(40, 'Kiran Shinde', 20, 36, 'Female', 'kiran.shinde@hospital.com', '9876510040', 'Morning', 'Staff Nurse', 40000.00),
+
+
+(41, 'Deepak Pawar', 1, 43, 'Male', 'deepak.pawar@hospital.com', '9876510041', 'Night', 'Senior Nurse', 55000.00),
+(42, 'Radhika More', 1, 30, 'Female', 'radhika.more@hospital.com', '9876510042', 'Morning', 'Staff Nurse', 37000.00),
+(43, 'Sanjay Chavan', 2, 45, 'Male', 'sanjay.chavan@hospital.com', '9876510043', 'Morning', 'Senior Nurse', 56000.00),
+(44, 'Priya Patil', 2, 27, 'Female', 'priya.patil@hospital.com', '9876510044', 'Evening', 'Staff Nurse', 35000.00),
+(45, 'Harshad Jadhav', 3, 34, 'Male', 'harshad.jadhav@hospital.com', '9876510045', 'Night', 'Nursing Assistant', 29000.00),
+(46, 'Snehal Pawar', 3, 31, 'Female', 'snehal.pawar@hospital.com', '9876510046', 'Morning', 'Staff Nurse', 38000.00),
+(47, 'Vivek Shinde', 4, 40, 'Male', 'vivek.shinde@hospital.com', '9876510047', 'Evening', 'Lab Technician', 44000.00),
+(48, 'Mrunal Patil', 4, 29, 'Female', 'mrunal.patil@hospital.com', '9876510048', 'Morning', 'Lab Technician', 40000.00),
+(49, 'Rajendra More', 5, 49, 'Male', 'rajendra.more@hospital.com', '9876510049', 'Morning', 'Senior Nurse', 59000.00),
+(50, 'Tejaswini Jadhav', 5, 33, 'Female', 'tejaswini.jadhav@hospital.com', '9876510050', 'Night', 'Staff Nurse', 39000.00),
+(51, 'Omkar Pawar', 6, 30, 'Male', 'omkar.pawar@hospital.com', '9876510051', 'Evening', 'Ward Assistant', 30000.00),
+(52, 'Shilpa Shinde', 6, 37, 'Female', 'shilpa.shinde@hospital.com', '9876510052', 'Morning', 'Staff Nurse', 41000.00),
+(53, 'Nagesh Patil', 7, 42, 'Male', 'nagesh.patil@hospital.com', '9876510053', 'Night', 'Senior Technician', 57000.00),
+(54, 'Pallavi More', 8, 35, 'Female', 'pallavi.more@hospital.com', '9876510054', 'Morning', 'Staff Nurse', 40000.00),
+(55, 'Swapnil Chavan', 9, 32, 'Male', 'swapnil.chavan@hospital.com', '9876510055', 'Evening', 'Nursing Assistant', 30000.00),
+(56, 'Jyoti Pawar', 10, 39, 'Female', 'jyoti.pawar@hospital.com', '9876510056', 'Morning', 'Staff Nurse', 43000.00),
+(57, 'Shubham Patil', 11, 27, 'Male', 'shubham.patil@hospital.com', '9876510057', 'Night', 'Ward Assistant', 29000.00),
+(58, 'Asha Jadhav', 12, 44, 'Female', 'asha.jadhav@hospital.com', '9876510058', 'Morning', 'Senior Nurse', 55000.00),
+(59, 'Mohan Shinde', 13, 41, 'Male', 'mohan.shinde@hospital.com', '9876510059', 'Evening', 'Staff Nurse', 42000.00),
+(60, 'Nikita More', 14, 28, 'Female', 'nikita.more@hospital.com', '9876510060', 'Morning', 'Staff Nurse', 36000.00);
