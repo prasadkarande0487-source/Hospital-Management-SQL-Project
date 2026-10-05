@@ -13,6 +13,78 @@ VALUES
 (9, 'Omkar Hospital', 'omkarhospital@gmail.com', 'Karad'),
 (10, 'Medicare Hospital', 'medicare@gmail.com', 'Chh. Sambhajinagar');
 
+
+INSERT INTO department
+(department_id, department_name)
+VALUES
+(1, 'General Medicine'),
+(2, 'Cardiology'),
+(3, 'Neurology'),
+(4, 'Orthopedics'),
+(5, 'Pediatrics'),
+(6, 'Gynecology'),
+(7, 'Dermatology'),
+(8, 'Ophthalmology'),
+(9, 'ENT'),
+(10, 'Radiology'),
+(11, 'General Surgery'),
+(12, 'Gastroenterology'),
+(13, 'Urology'),
+(14, 'Nephrology'),
+(15, 'Pulmonology'),
+(16, 'Oncology'),
+(17, 'Psychiatry'),
+(18, 'Dentistry'),
+(19, 'Pathology'),
+(20, 'Emergency Medicine');
+
+INSERT INTO doctor
+(doctor_id, department_id, doctor_name, specialization, email, qualification)
+VALUES
+(1, 1, 'Dr. Amit Kulkarni', 'General Medicine', 'amit.kulkarni@hospital.com', 'MBBS, MD'),
+(2, 2, 'Dr. Sneha Patil', 'Cardiology', 'sneha.patil@hospital.com', 'MBBS, MD, DM'),
+(3, 3, 'Dr. Rahul Deshmukh', 'Neurology', 'rahul.deshmukh@hospital.com', 'MBBS, MD, DM'),
+(4, 4, 'Dr. Priya Jadhav', 'Orthopedics', 'priya.jadhav@hospital.com', 'MBBS, MS'),
+(5, 5, 'Dr. Sandeep More', 'Pediatrics', 'sandeep.more@hospital.com', 'MBBS, MD'),
+(6, 6, 'Dr. Neha Shinde', 'Gynecology', 'neha.shinde@hospital.com', 'MBBS, MD'),
+(7, 7, 'Dr. Rajesh Pawar', 'Dermatology', 'rajesh.pawar@hospital.com', 'MBBS, MD'),
+(8, 8, 'Dr. Pooja Chavan', 'Ophthalmology', 'pooja.chavan@hospital.com', 'MBBS, MS'),
+(9, 9, 'Dr. Nitin Patil', 'ENT', 'nitin.patil@hospital.com', 'MBBS, MS'),
+(10, 10, 'Dr. Rutuja More', 'Radiology', 'rutuja.more@hospital.com', 'MBBS, MD'),
+
+(11, 11, 'Dr. Mahesh Shinde', 'General Surgery', 'mahesh.shinde@hospital.com', 'MBBS, MS'),
+(12, 12, 'Dr. Kavita Pawar', 'General Medicine', 'kavita.pawar@hospital.com', 'MBBS, MD'),
+(13, 13, 'Dr. Vijay Patil', 'Cardiology', 'vijay.patil@hospital.com', 'MBBS, MD, DM'),
+(14, 14, 'Dr. Anjali Jadhav', 'Neurology', 'anjali.jadhav@hospital.com', 'MBBS, MD, DM'),
+(15, 15, 'Dr. Sachin More', 'Orthopedics', 'sachin.more@hospital.com', 'MBBS, MS'),
+(16, 16, 'Dr. Swati Kulkarni', 'Pediatrics', 'swati.kulkarni@hospital.com', 'MBBS, MD'),
+(17, 17, 'Dr. Ganesh Deshmukh', 'Gynecology', 'ganesh.deshmukh@hospital.com', 'MBBS, MD'),
+(18, 18, 'Dr. Aarti Patil', 'Dermatology', 'aarti.patil@hospital.com', 'MBBS, MD'),
+(19, 19, 'Dr. Prakash Chavan', 'Ophthalmology', 'prakash.chavan@hospital.com', 'MBBS, MS'),
+(20, 20, 'Dr. Meena Pawar', 'ENT', 'meena.pawar@hospital.com', 'MBBS, MS'),
+
+(21, 1, 'Dr. Ramesh Shinde', 'General Medicine', 'ramesh.shinde@hospital.com', 'MBBS, MD'),
+(22, 2, 'Dr. Manisha Patil', 'Cardiology', 'manisha.patil@hospital.com', 'MBBS, MD, DM'),
+(23, 3, 'Dr. Akash More', 'Neurology', 'akash.more@hospital.com', 'MBBS, MD, DM'),
+(24, 4, 'Dr. Vaishali Jadhav', 'Orthopedics', 'vaishali.jadhav@hospital.com', 'MBBS, MS'),
+(25, 5, 'Dr. Shubham Pawar', 'Pediatrics', 'shubham.pawar@hospital.com', 'MBBS, MD'),
+(26, 6, 'Dr. Ashwini Patil', 'Gynecology', 'ashwini.patil@hospital.com', 'MBBS, MD'),
+(27, 7, 'Dr. Santosh More', 'Dermatology', 'santosh.more@hospital.com', 'MBBS, MD'),
+(28, 8, 'Dr. Komal Shinde', 'Ophthalmology', 'komal.shinde@hospital.com', 'MBBS, MS'),
+(29, 9, 'Dr. Nikhil Deshmukh', 'ENT', 'nikhil.deshmukh@hospital.com', 'MBBS, MS'),
+(30, 10, 'Dr. Snehal Pawar', 'Radiology', 'snehal.pawar@hospital.com', 'MBBS, MD'),
+
+(31, 11, 'Dr. Dinesh Patil', 'General Surgery', 'dinesh.patil@hospital.com', 'MBBS, MS'),
+(32, 12, 'Dr. Poonam More', 'General Medicine', 'poonam.more@hospital.com', 'MBBS, MD'),
+(33, 13, 'Dr. Harshad Jadhav', 'Cardiology', 'harshad.jadhav@hospital.com', 'MBBS, MD, DM'),
+(34, 14, 'Dr. Sneha Shinde', 'Neurology', 'sneha.shinde2@hospital.com', 'MBBS, MD, DM'),
+(35, 15, 'Dr. Vivek Pawar', 'Orthopedics', 'vivek.pawar@hospital.com', 'MBBS, MS'),
+(36, 16, 'Dr. Radhika Patil', 'Pediatrics', 'radhika.patil@hospital.com', 'MBBS, MD'),
+(37, 17, 'Dr. Omkar More', 'Gynecology', 'omkar.more@hospital.com', 'MBBS, MD'),
+(38, 18, 'Dr. Jyoti Deshmukh', 'Dermatology', 'jyoti.deshmukh@hospital.com', 'MBBS, MD'),
+(39, 19, 'Dr. Kiran Chavan', 'Ophthalmology', 'kiran.chavan@hospital.com', 'MBBS, MS'),
+(40, 20, 'Dr. Amol Shinde', 'ENT', 'amol.shinde@hospital.com', 'MBBS, MS');
+
 INSERT INTO room
 (room_id, room_type, charge_per_day, status)
 VALUES
